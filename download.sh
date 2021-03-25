@@ -103,7 +103,7 @@ if [[ "$response" == "y" ]];then
 	rm *.json
 	source ../scripts/concatenate.sh
 	if [[ "$response2" == "y" ]];then
-		scp -r *.fastq* "$username"@login-phoenix.pace.gatech.edu:/storage/home/hcoda1//4/"$username"/scratch
+		scp -r *.fastq* "$username"@login-phoenix.pace.gatech.edu:/storage/home/hcoda1//4/"$username"/scratch/"$projectName"
 	fi
 fi
 echo "DONE"
